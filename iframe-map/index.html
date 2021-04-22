@@ -7,23 +7,26 @@
   <title>Mapa La Plata</title>
   <meta name="description" content="Mapa">
   <meta name="author" content="Fran">
-  <link rel="stylesheet" href="css/mystyle.css">
+  
   <!--
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-  crossorigin=""/>
+  <link rel="stylesheet" href="css/mystyle.css">
   <link href="./opacity/Control.Opacity.css" rel="stylesheet"/>
   <link href="Leaflet-MiniMap-master/src/Control.MiniMap.css"/>
-  <link rel="icon" href="data:;base64,="/>
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> 
     -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <link rel="icon" href="data:;base64,="/>
 </head>
 
 <body>
     <h1>Mapa de La Plata</h1>
 
-    <iframe 
+    <iframe id="iframeid"
+        allow=""
+        onload="setView()"
         src="https://visualizador.ideba.gba.gob.ar/" 
         title="Visualizador IDEBA" 
         style="height: 85vh; width: 75%; border:none"
@@ -31,10 +34,10 @@
     >
     </iframe>
 
-    <!--
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
+    <!--
     <script src="./opacity/Control.Opacity.js"></script>
     <script src="Leaflet-MiniMap-master/src/Control.MiniMap.js"></script>
     <script src="//unpkg.com/vue2-leaflet"></script>
